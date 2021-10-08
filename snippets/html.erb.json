@@ -1,0 +1,218 @@
+{
+  // CalloutCard
+  "Polaris CalloutCard": {
+    "prefix": "polaris_callout_card",
+    "body": [
+      "<%= polaris_callout_card(",
+      "  title: \"${1:Customize the style of your checkout}\",",
+      "  illustration: \"${2:https://cdn.shopify.com/s/assets/admin/checkout/settings-customizecart-705f57c725ac05be5a34ec20c05b94298cb8afd10aac7bd9c7ad02030f48cfa0.svg}\",",
+      ") do |callout| %>",
+      "  <% callout.primary_action(url: \"#\") { \"${3:Customize checkout}\" } %>",
+      "",
+      "  <p>$0</p>",
+      "<% end %>"
+    ]
+  },
+
+  // Card
+  "Polaris Card": {
+    "prefix": "polaris_card",
+    "body": [
+      "<%= polaris_card(title: \"$1\") do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+
+  // Page
+  "Polaris Page": {
+    "prefix": "polaris_page",
+    "body": [
+      "<%= polaris_page(title: \"$1\") do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+  "Polaris Page - Full width": {
+    "prefix": "polaris_page_full",
+    "body": [
+      "<%= polaris_page(full_width: true, title: \"$1\") do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+  "Polaris Page - Narrow width": {
+    "prefix": "polaris_page_narrow",
+    "body": [
+      "<%= polaris_page(narrow_width: true, title: \"$1\") do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+
+  // PageActions
+  "Polaris PageActions": {
+    "prefix": "polaris_page_actions",
+    "body": [
+      "<%= polaris_page_actions do |actions| %>",
+      "  <% actions.primary_action { \"${1:Save}\" } %>",
+      "  <% actions.secondary_action(destructive: true) { \"${0:Delete}\" } %>",
+      "<% end %>"
+    ]
+  },
+
+  // Layout
+  "Polaris Layout - One Column": {
+    "prefix": "polaris_layout",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.section do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Layout - Two Columns": {
+    "prefix": "polaris_layout_two",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.section(one_half: true) do %>",
+      "    $1",
+      "  <% end %>",
+      "  <% layout.section(one_half: true) do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Layout - Three Columns": {
+    "prefix": "polaris_layout_three",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.section(one_third: true) do %>",
+      "    $1",
+      "  <% end %>",
+      "  <% layout.section(one_third: true) do %>",
+      "    $2",
+      "  <% end %>",
+      "  <% layout.section(one_third: true) do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Layout - Four Columns": {
+    "prefix": "polaris_layout_four",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.section(one_fourth: true) do %>",
+      "    $1",
+      "  <% end %>",
+      "  <% layout.section(one_fourth: true) do %>",
+      "    $2",
+      "  <% end %>",
+      "  <% layout.section(one_fourth: true) do %>",
+      "    $3",
+      "  <% end %>",
+      "  <% layout.section(one_fourth: true) do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Layout - Secondary": {
+    "prefix": "polaris_layout_secondary",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.section do %>",
+      "    $1",
+      "  <% end %>",
+      "  <% layout.section(secondary: true) do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Layout - Annotated": {
+    "prefix": "polaris_layout_annotated",
+    "body": [
+      "<%= polaris_layout do |layout| %>",
+      "  <% layout.annotated_section(title: \"${1:Title}\") do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+
+  // Spacer - Vertical
+  "Polaris Spacer - Vertical Base": {
+    "prefix": "polaris_spacer_vertical",
+    "body": ["<%= polaris_spacer(vertical: :base) %>"]
+  },
+  "Polaris Spacer - Vertical Extra Tight": {
+    "prefix": "polaris_spacer_vertical_extra_tight",
+    "body": ["<%= polaris_spacer(vertical: :extra_tight) %>"]
+  },
+  "Polaris Spacer - Vertical Tight": {
+    "prefix": "polaris_spacer_vertical_tight",
+    "body": ["<%= polaris_spacer(vertical: :tight) %>"]
+  },
+  "Polaris Spacer - Vertical Base Tight": {
+    "prefix": "polaris_spacer_vertical_base_tight",
+    "body": ["<%= polaris_spacer(vertical: :base_tight) %>"]
+  },
+  "Polaris Spacer - Vertical Loose": {
+    "prefix": "polaris_spacer_vertical_loose",
+    "body": ["<%= polaris_spacer(vertical: :loose) %>"]
+  },
+  "Polaris Spacer - Vertical Extra Loose": {
+    "prefix": "polaris_spacer_vertical_extra_loose",
+    "body": ["<%= polaris_spacer(vertical: :extra_loose) %>"]
+  },
+
+  // Spacer - Horizontal
+  "Polaris Spacer - Horizontal Base": {
+    "prefix": "polaris_spacer_horizontal",
+    "body": ["<%= polaris_spacer(horizontal: :base) %>"]
+  },
+  "Polaris Spacer - Horizontal Extra Tight": {
+    "prefix": "polaris_spacer_horizontal_extra_tight",
+    "body": ["<%= polaris_spacer(horizontal: :extra_tight) %>"]
+  },
+  "Polaris Spacer - Horizontal Tight": {
+    "prefix": "polaris_spacer_horizontal_tight",
+    "body": ["<%= polaris_spacer(horizontal: :tight) %>"]
+  },
+  "Polaris Spacer - Horizontal Base Tight": {
+    "prefix": "polaris_spacer_horizontal_base_tight",
+    "body": ["<%= polaris_spacer(horizontal: :base_tight) %>"]
+  },
+  "Polaris Spacer - Horizontal Loose": {
+    "prefix": "polaris_spacer_horizontal_loose",
+    "body": ["<%= polaris_spacer(horizontal: :loose) %>"]
+  },
+  "Polaris Spacer - Horizontal Extra Loose": {
+    "prefix": "polaris_spacer_horizontal_extra_loose",
+    "body": ["<%= polaris_spacer(horizontal: :extra_loose) %>"]
+  },
+
+  // Stack
+  "Polaris Stack": {
+    "prefix": "polaris_stack",
+    "body": [
+      "<%= polaris_stack do |stack| %>",
+      "  <% stack.item do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Stack - Item": {
+    "prefix": "polaris_stack_item",
+    "body": [
+      "<% stack.item do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+}

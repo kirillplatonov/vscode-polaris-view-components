@@ -1,0 +1,32 @@
+{
+  "name": "polaris-view-components",
+  "displayName": "Polaris ViewComponents",
+  "description": "Collection of snippets for Polaris ViewComponents.",
+  "version": "0.1.0",
+  "publisher": "kirillplatonov",
+  "author": "Kirill Platonov",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/kirillplatonov/polaris-view-components.git"
+	},
+	"bugs": "https://github.com/kirillplatonov/polaris-view-components/issues",
+  "license": "MIT",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html.erb",
+        "path": "./snippets/html.erb.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "14.x",
+    "@types/vscode": "^1.61.0"
+  }
+}
