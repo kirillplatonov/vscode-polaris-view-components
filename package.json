@@ -1,5 +1,5 @@
 {
-  "name": "polaris-view-components",
+  "name": "vscode-polaris-view-components",
   "displayName": "Polaris ViewComponents",
   "description": "Collection of snippets for Polaris ViewComponents.",
   "version": "0.1.2",
@@ -24,10 +24,6 @@
         "path": "./snippets/html.erb.json"
       }
     ]
-  },
-  "scripts": {
-    "build": "vsce package",
-    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "14.x",
