@@ -181,4 +181,32 @@
       "<% end %>"
     ]
   },
+  "Polaris Sub Stack": {
+    "prefix": "polaris_sub_stack",
+    "body": [
+      "<%= polaris_stack do |sub_stack| %>",
+      "  <% sub_stack.item do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
+  "Polaris Sub Stack - Item": {
+    "prefix": "polaris_sub_stack_item",
+    "body": [
+      "<% sub_stack.item do %>",
+      "  $0",
+      "<% end %>"
+    ]
+  },
+  "Polaris Vertical Stack": {
+    "prefix": "polaris_vertical_stack",
+    "body": [
+      "<%= polaris_stack(vertical: true) do |stack| %>",
+      "  <% stack.item do %>",
+      "    $0",
+      "  <% end %>",
+      "<% end %>"
+    ]
+  },
 }

@@ -43,6 +43,16 @@ This extensions provides a collection of snippets for Polaris ViewComponents in 
 ### Stack
 - `polaris_stack`
 - `polaris_stack_item`
+- `polaris_sub_stack`
+- `polaris_sub_stack_item`
+- `polaris_vertical_stack`
+
+## Publish extension
+
+```
+vsce package
+vsce publish
+```
 
 ## License
 
