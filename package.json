@@ -2,7 +2,7 @@
   "name": "polaris-view-components",
   "displayName": "Polaris ViewComponents",
   "description": "Collection of snippets for Polaris ViewComponents.",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "publisher": "kirillplatonov",
   "author": "Kirill Platonov",
   "engines": {
