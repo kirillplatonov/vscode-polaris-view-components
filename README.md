@@ -47,6 +47,9 @@ This extensions provides a collection of snippets for Polaris ViewComponents in 
 - `polaris_sub_stack_item`
 - `polaris_vertical_stack`
 
+## Banner
+- `polaris_banner`
+
 ## Publish extension
 
 ```

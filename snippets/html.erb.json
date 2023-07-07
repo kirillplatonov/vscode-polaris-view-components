@@ -209,4 +209,15 @@
       "<% end %>"
     ]
   },
+
+  // Banner
+  "Polaris Banner": {
+    "prefix": "polaris_banner",
+    "body": [
+      "<%= polaris_banner(title: \"${1:Banner title}\") do |banner| %>",
+      "  <% banner.dismiss_button(url: \"${2:#}\") %>",
+      "  <p>${0}</p>",
+      "<% end %>"
+    ]
+  },
 }
