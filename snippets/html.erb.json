@@ -7,7 +7,7 @@
       "  title: \"${1:Customize the style of your checkout}\",",
       "  illustration: \"${2:https://cdn.shopify.com/s/assets/admin/checkout/settings-customizecart-705f57c725ac05be5a34ec20c05b94298cb8afd10aac7bd9c7ad02030f48cfa0.svg}\",",
       ") do |callout| %>",
-      "  <% callout.primary_action(url: \"#\") { \"${3:Customize checkout}\" } %>",
+      "  <% callout.with_primary_action(url: \"#\") { \"${3:Customize checkout}\" } %>",
       "",
       "  <p>$0</p>",
       "<% end %>"
@@ -63,8 +63,8 @@
     "prefix": "polaris_page_actions",
     "body": [
       "<%= polaris_page_actions do |actions| %>",
-      "  <% actions.primary_action { \"${1:Save}\" } %>",
-      "  <% actions.secondary_action(destructive: true) { \"${0:Delete}\" } %>",
+      "  <% actions.with_primary_action { \"${1:Save}\" } %>",
+      "  <% actions.with_secondary_action(destructive: true) { \"${0:Delete}\" } %>",
       "<% end %>"
     ]
   },
@@ -74,7 +74,7 @@
     "prefix": "polaris_layout",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.section do %>",
+      "  <% layout.with_section do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -84,10 +84,10 @@
     "prefix": "polaris_layout_two",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.section(one_half: true) do %>",
+      "  <% layout.with_section(one_half: true) do %>",
       "    $1",
       "  <% end %>",
-      "  <% layout.section(one_half: true) do %>",
+      "  <% layout.with_section(one_half: true) do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -97,13 +97,13 @@
     "prefix": "polaris_layout_three",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.section(one_third: true) do %>",
+      "  <% layout.with_section(one_third: true) do %>",
       "    $1",
       "  <% end %>",
-      "  <% layout.section(one_third: true) do %>",
+      "  <% layout.with_section(one_third: true) do %>",
       "    $2",
       "  <% end %>",
-      "  <% layout.section(one_third: true) do %>",
+      "  <% layout.with_section(one_third: true) do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -113,16 +113,16 @@
     "prefix": "polaris_layout_four",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.section(one_fourth: true) do %>",
+      "  <% layout.with_section(one_fourth: true) do %>",
       "    $1",
       "  <% end %>",
-      "  <% layout.section(one_fourth: true) do %>",
+      "  <% layout.with_section(one_fourth: true) do %>",
       "    $2",
       "  <% end %>",
-      "  <% layout.section(one_fourth: true) do %>",
+      "  <% layout.with_section(one_fourth: true) do %>",
       "    $3",
       "  <% end %>",
-      "  <% layout.section(one_fourth: true) do %>",
+      "  <% layout.with_section(one_fourth: true) do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -132,10 +132,10 @@
     "prefix": "polaris_layout_secondary",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.section do %>",
+      "  <% layout.with_section do %>",
       "    $1",
       "  <% end %>",
-      "  <% layout.section(secondary: true) do %>",
+      "  <% layout.with_section(secondary: true) do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -145,7 +145,7 @@
     "prefix": "polaris_layout_annotated",
     "body": [
       "<%= polaris_layout do |layout| %>",
-      "  <% layout.annotated_section(title: \"${1:Title}\") do %>",
+      "  <% layout.with_annotated_section(title: \"${1:Title}\") do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -167,7 +167,7 @@
     "prefix": "polaris_stack",
     "body": [
       "<%= polaris_stack do |stack| %>",
-      "  <% stack.item do %>",
+      "  <% stack.with_item do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -176,7 +176,7 @@
   "Polaris Stack - Item": {
     "prefix": "polaris_stack_item",
     "body": [
-      "<% stack.item do %>",
+      "<% stack.with_item do %>",
       "  $0",
       "<% end %>"
     ]
@@ -185,7 +185,7 @@
     "prefix": "polaris_sub_stack",
     "body": [
       "<%= polaris_stack do |sub_stack| %>",
-      "  <% sub_stack.item do %>",
+      "  <% sub_stack.with_item do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -194,7 +194,7 @@
   "Polaris Sub Stack - Item": {
     "prefix": "polaris_sub_stack_item",
     "body": [
-      "<% sub_stack.item do %>",
+      "<% sub_stack.with_item do %>",
       "  $0",
       "<% end %>"
     ]
@@ -203,7 +203,7 @@
     "prefix": "polaris_vertical_stack",
     "body": [
       "<%= polaris_stack(vertical: true) do |stack| %>",
-      "  <% stack.item do %>",
+      "  <% stack.with_item do %>",
       "    $0",
       "  <% end %>",
       "<% end %>"
@@ -215,7 +215,7 @@
     "prefix": "polaris_banner",
     "body": [
       "<%= polaris_banner(title: \"${1:Banner title}\") do |banner| %>",
-      "  <% banner.dismiss_button(url: \"${2:#}\") %>",
+      "  <% banner.with_dismiss_button(url: \"${2:#}\") %>",
       "  <p>${0}</p>",
       "<% end %>"
     ]
